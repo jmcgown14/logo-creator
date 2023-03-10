@@ -53,7 +53,7 @@ inquirer
     .then((answers) => {
         console.log(answers);
         const logo = createShape(answers);
-        
+
         fs.writeFile(outPath, generateSVG(logo), (err) =>
             err ? console.error(err) : console.log('Successfully generated logo.svg'));
     })
