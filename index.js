@@ -2,7 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const color = require("color");
 const { createShape } = require("./lib/createShape");
-const { generateSVG } = require("./lib/generateSVG");
+const SVG = require("./lib/svg");
 
 inquirer
   .prompt([
@@ -55,8 +55,11 @@ inquirer
   .then((answers) => {
     console.log(answers);
     const shape = createShape(answers);
+    const svg = new SVG();
+    svg.setText(answers.logoLetters, answers.textColor )
+    svg.setShape(shape)
 
-    fs.writeFile("logo.svg", generateSVG(logo), (err) =>
+    fs.writeFile("logo.svg", svg.render(), (err) =>
       err ? console.error(err) : console.log("Successfully generated logo.svg")
     );
   })

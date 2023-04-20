@@ -1,13 +1,1 @@
-<!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-        <polygon points="100,0 0,0 50,100" fill="blue" />
-        x="50%"
-        y="50%"
-        text-anchor="middle"
-        fill="green"
-        font-size="2.5rem" letter-spacing="2" dy=".2em"
-        font-family="Arial">JMM
-</svg> -->
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-    <polygon points="100,0 0,0 50,100" fill="blue" />
-    <text x="50%" y="50%" text-anchor="middle" fill="green" font-size="2.5rem" letter-spacing="2" dy=".2em" font-family="Arial">JMM</text>
-</svg>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="300" height="200"><polygon points="100,0 0,0 50,100" fill="brown"/><text x="50%" y="50%" text-anchor="middle" fill="yellow" font-size="2.5rem" letter-spacing="2" dy=".2em" font-family="Arial">JMM</text></svg>
